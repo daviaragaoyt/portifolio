@@ -1,5 +1,7 @@
 import React from 'react';
+import person from '../assets/davi.png';
 import { MdArrowForward } from 'react-icons/md';
+
 const styles = {
     heroSection: {
         display: 'flex',
@@ -94,7 +96,7 @@ const HeroSection: React.FC = () => {
                     </div>
                 </div>
                 <div style={styles.imageContainer}>
-                    <img src="src\assets\davi.png" alt="myface" style={styles.phoneImage} />
+                    <img src={person} style={styles.phoneImage} />
                 </div>
             </div>
         </section>

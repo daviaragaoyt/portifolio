@@ -1,15 +1,12 @@
 import React from 'react';
 import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
 import './ProjectsSection.css';
-
-// 1. Importe as imagens diretamente
 import confetiariaImg from '../assets/confeitaria.png';
 import blocodenotasImg from '../assets/blocodenotas.png';
 import odontoappImg from '../assets/odontoapp.png';
 import nearbyImg from '../assets/nearby.png';
 import pokedexImg from '../assets/pokedeximage.png';
 
-// Defina uma interface para o tipo de dados dos projetos
 interface Project {
     image: string;
     title: string;
@@ -18,38 +15,37 @@ interface Project {
     codeLink?: string;
 }
 
-// 2. Use as variáveis importadas nos dados dos projetos
 const projectsData: Project[] = [
     {
-        image: confetiariaImg, // Use a variável
+        image: confetiariaImg,
         title: 'Confeitaria Dias',
         description: 'Projeto de uma loja de doces utilizando HTML, CSS e JavaScript.',
         siteLink: 'https://confeitaria-dias-exemplo.com.br',
         codeLink: 'https://github.com/seuperfil/confeitaria-dias',
     },
     {
-        image: blocodenotasImg, // Use a variável
+        image: blocodenotasImg,
         title: 'Bloco de notas',
         description: 'Projeto de React da Rocketseat, com API que passa áudio para texto.',
         siteLink: 'https://bloco-de-notas-exemplo.vercel.app',
         codeLink: 'https://github.com/seuperfil/bloco-de-notas',
     },
     {
-        image: odontoappImg, // Use a variável
+        image: odontoappImg,
         title: 'Higiene Score',
         description: 'Versão Web em Typescript e React para os alunos de odonto.',
         siteLink: 'https://higiene-score-exemplo.vercel.app',
         codeLink: 'https://github.com/seuperfil/higiene-score',
     },
     {
-        image: nearbyImg, // Use a variável
+        image: nearbyImg,
         title: 'Nearby',
         description: 'App para uso de cupons em lojas parceiras perto de você. Uso de Geolocalização e câmera do dispositivo usando Typescript, React e React Native.',
         siteLink: 'https://nearby-exemplo.vercel.app',
         codeLink: 'https://github.com/seuperfil/nearby-app',
     },
     {
-        image: pokedexImg, // Use a variável
+        image: pokedexImg,
         title: 'Pokedex',
         description: 'Pokedex utilizando React.js e Router-Dom.',
         siteLink: 'https://pokedex-exemplo.vercel.app',
