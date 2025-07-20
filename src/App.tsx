@@ -7,7 +7,7 @@ import Footer from './components/Footer';
 
 const App: React.FC = () => {
   return (
-    <div>
+    <>
       <Header />
       <main>
         <HeroSection />
@@ -15,7 +15,7 @@ const App: React.FC = () => {
         <TechnologiesSection />
       </main>
       <Footer />
-    </div>
+    </>
   );
 };
 

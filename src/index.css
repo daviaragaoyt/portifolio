@@ -1,15 +1,17 @@
-/* src/index.css */
-
-:root {
-  font-family: sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  color: #efefef; 
+html {
+  scroll-behavior: smooth;
 }
-
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #efefef;
   background-color: #121212;
+}
+a {
+  text-decoration: none;
+  color: #efefef;
 }

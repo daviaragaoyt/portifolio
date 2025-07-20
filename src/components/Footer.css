@@ -1,5 +1,3 @@
-/* src/components/Footer.css */
-
 .footer {
   background-color: #121212;
   padding: 60px 40px 20px;
@@ -41,7 +39,7 @@
 }
 
 .social-icon:hover {
-  color: #8bff8b; /* Cor de destaque ao passar o mouse */
+  color: #8bff8b;
 }
 
 .footer-copyright {
