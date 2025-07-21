@@ -2,10 +2,16 @@ import React from 'react';
 import person from '../assets/davi.png';
 import { MdArrowForward } from 'react-icons/md';
 import './HeroSection.css';
+
 const HeroSection: React.FC = () => {
     return (
         <section className="hero-section">
             <div className="content-container">
+                {/* 1. Mova a div da imagem para o início */}
+                <div className="image-container">
+                    <img src={person} className="profile-image" alt="Foto de perfil de Davi Aragão" />
+                </div>
+                {/* 2. A div do texto vem em seguida */}
                 <div className="text-container">
                     <h1 className="profile-title">DAVI ARAGÃO:</h1>
                     <h2 className="profile-subtitle">Desenvolvedor FullStack</h2>
@@ -19,11 +25,9 @@ const HeroSection: React.FC = () => {
                         </span>
                     </div>
                 </div>
-                <div className="image-container">
-                    <img src={person} className="profile-image" alt="Foto de perfil de Davi Aragão" />
-                </div>
             </div>
         </section>
     );
 };
+
 export default HeroSection;

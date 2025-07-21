@@ -19,6 +19,7 @@
 .text-container {
   flex: 1;
   padding-right: 40px;
+  order: 1; /* Posição 1 na ordem visual (esquerda) */
 }
 
 .profile-title {
@@ -75,10 +76,58 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  order: 2; /* Posição 2 na ordem visual (direita) */
 }
 
 .profile-image {
   border-radius: 100%;
   height: 400px;
   object-fit: cover;
+}
+
+/* Media Query para telas menores que 768px (celulares) */
+@media (max-width: 768px) {
+  .hero-section {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .content-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 0;
+  }
+
+  /* Resetamos a ordem para que os elementos apareçam na ordem do HTML */
+  .text-container,
+  .image-container {
+    order: 0;
+  }
+
+  .text-container {
+    padding-right: 0;
+  }
+
+  .profile-title,
+  .profile-subtitle {
+    font-size: 36px;
+    margin: 0;
+  }
+
+  .profile-paragraph {
+    max-width: 100%;
+  }
+
+  .button-container {
+    justify-content: center;
+  }
+
+  .image-container {
+    margin-bottom: 20px;
+  }
+
+  .profile-image {
+    width: 250px;
+    height: 250px;
+  }
 }
