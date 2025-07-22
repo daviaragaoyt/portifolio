@@ -13,13 +13,13 @@ const Footer: React.FC = () => {
                     Sinta-se à vontade para me contatar por qualquer um dos canais abaixo.
                 </p>
                 <div className="social-links">
-                    <a href="https://www.instagram.com/seu-usuario" target="_blank" rel="noopener noreferrer" className="social-icon">
+                    <a href="https://www.instagram.com/d.a.v.i_aragao" target="_blank" rel="noopener noreferrer" className="social-icon">
                         <FaInstagram />
                     </a>
-                    <a href="https://www.linkedin.com/in/seu-usuario" target="_blank" rel="noopener noreferrer" className="social-icon">
+                    <a href="https://www.linkedin.com/in/davi-aragão-25aa30285" target="_blank" rel="noopener noreferrer" className="social-icon">
                         <FaLinkedin />
                     </a>
-                    <a href="https://wa.me/5561999999999" target="_blank" rel="noopener noreferrer" className="social-icon">
+                    <a href="https://wa.me/5561982611486" target="_blank" rel="noopener noreferrer" className="social-icon">
                         <FaWhatsapp />
                     </a>
                 </div>
