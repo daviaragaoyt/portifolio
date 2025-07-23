@@ -8,6 +8,9 @@ import blocodenotasImg from '../assets/blocodenotas.png';
 import odontoappImg from '../assets/odontoapp.png';
 import nearbyImg from '../assets/nearby.png';
 import pokedexImg from '../assets/pokedeximage.png';
+import IDetect from '../assets/idetect.png'
+import CyberBorg from '../assets/cyberborg.png'
+import CodePlac from '../assets/codeplac.png'
 
 interface Project {
     image: string;
@@ -52,6 +55,27 @@ const projectsData: Project[] = [
         description: 'Pokedex utilizando React.js e Router-Dom.',
         siteLink: 'https://pokedex-delta-six-79.vercel.app',
         codeLink: 'https://github.com/daviaragaoyt/Pokedex',
+    },
+    {
+        image: IDetect,
+        title: 'IDetect',
+        description: 'Projeto de Reconhecimento facial, utilizando a ferramenta Teacheble Machine da Google (Para o treinamento das models, foi usando somente meu rosto e de uma colega).',
+        siteLink: 'https://i-detect.vercel.app',
+        codeLink: 'https://github.com/daviaragaoyt/IDetect',
+    },
+    {
+        image: CyberBorg,
+        title: 'CyberBorg',
+        description: 'Um jogo que conta a historia de um cyborg que acordou em um subsolo, sem saber o qur aconteceu e o POR QUE de estar ali...',
+        siteLink: 'https://cyber-borg.vercel.app',
+        codeLink: 'https://github.com/daviaragaoyt/CyberBorg',
+    },
+    {
+        image: CodePlac,
+        title: 'CodePlac',
+        description: 'Projeto criado para o evento CODEPLAC realizado na faculdade UNICEPLAC, onde o professor cadastrado no banco de dados consegue criar um caça palavras em binario e o aluno loga ao encontrar as palavras loga para ganhar pontos.',
+        siteLink: 'https://word-hunt-frontend.vercel.app',
+        codeLink: 'https://github.com/daviaragaoyt/word-hunt-frontend',
     },
 ];
 
