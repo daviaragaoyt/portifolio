@@ -10,7 +10,10 @@ import nearbyImg from '../assets/nearby.png';
 import pokedexImg from '../assets/pokedeximage.png';
 import IDetect from '../assets/idetect.png'
 import CyberBorg from '../assets/cyberborg.png'
-import CodePlac from '../assets/codeplac.png'
+import CodePlac from '../assets/codeplac.png';
+import Zaqueu from '../assets/zaqueu.png';
+import IBMG from '../assets/ibmg.png';
+import skyCastImg from '../assets/skycast.png';
 
 interface Project {
     image: string;
@@ -22,12 +25,34 @@ interface Project {
 
 const projectsData: Project[] = [
     {
-        image: confetiariaImg,
-        title: 'Confeitaria Dias',
-        description: 'Projeto de uma loja de doces utilizando HTML, CSS e JavaScript.',
-        siteLink: 'https://confeitaria-dias-exemplo.com.br',
-        codeLink: 'https://github.com/daviaragaoyt/ConfeitariaDias',
+        image: Zaqueu,
+        title: 'Zaqueu',
+        description: 'Faça todo o gerenciamento financeiro da igreja, lance o recebimento de dízimos e ofertas.',
+        siteLink: 'https://zaqueu-web-ti1c.vercel.app',
+        codeLink: 'https://github.com/daviaragaoyt/Zaqueu-Web',
     },
+    {
+        image: IBMG,
+        title: 'Sorteador IBMG',
+        description: 'Site criado para eventos que sorteiam pessoas para participar de premios.',
+        siteLink: 'https://sorteador-ibmg.vercel.app/sorteio-nomes/index.html',
+        codeLink: 'https://github.com/daviaragaoyt/Sorteador-IBMG',
+    },
+    {
+        image: CodePlac,
+        title: 'CodePlac',
+        description: 'Projeto criado para o evento CODEPLAC realizado na faculdade UNICEPLAC, onde o professor cadastrado no banco de dados consegue criar um caça palavras em binario e o aluno loga ao encontrar as palavras loga para ganhar pontos.',
+        siteLink: 'https://word-hunt-frontend.vercel.app',
+        codeLink: 'https://github.com/daviaragaoyt/word-hunt-frontend',
+    },
+    {
+        image: skyCastImg,
+        title: 'SkyCast',
+        description: 'Aplicação de previsão do tempo com geolocalização e mapas interativos.',
+        siteLink: '#',
+        codeLink: '#',
+    },
+
     {
         image: blocodenotasImg,
         title: 'Bloco de notas',
@@ -71,12 +96,13 @@ const projectsData: Project[] = [
         codeLink: 'https://github.com/daviaragaoyt/CyberBorg',
     },
     {
-        image: CodePlac,
-        title: 'CodePlac',
-        description: 'Projeto criado para o evento CODEPLAC realizado na faculdade UNICEPLAC, onde o professor cadastrado no banco de dados consegue criar um caça palavras em binario e o aluno loga ao encontrar as palavras loga para ganhar pontos.',
-        siteLink: 'https://word-hunt-frontend.vercel.app',
-        codeLink: 'https://github.com/daviaragaoyt/word-hunt-frontend',
+        image: confetiariaImg,
+        title: 'Confeitaria Dias',
+        description: 'Projeto de uma loja de doces utilizando HTML, CSS e JavaScript.',
+        siteLink: 'https://confeitaria-dias.vercel.app',
+        codeLink: 'https://github.com/daviaragaoyt/ConfeitariaDias',
     },
+
 ];
 
 const ProjectsSection: React.FC = () => {

@@ -1,14 +1,15 @@
 .projects-section {
   padding: 80px 40px;
-  background-color: #121212;
+  background-color: var(--bg-primary);
   text-align: center;
 }
 
 .projects-heading {
   font-size: 40px;
-  font-weight: bold;
-  color: #efefef;
+  font-weight: 800;
+  color: var(--text-primary);
   margin-bottom: 60px;
+  letter-spacing: -1px;
 }
 
 .cards-container {
@@ -19,10 +20,10 @@
 }
 
 .project-card {
-  background-color: #2c2c2c;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  border: 2px solid #4a4a4a;
+  background-color: var(--card-bg);
+  border-radius: 16px;
+  box-shadow: 0 4px 6px -1px var(--shadow-color);
+  border: 1px solid var(--border-color);
   width: 350px;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -32,19 +33,26 @@
 
 .project-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 20px 25px -5px var(--shadow-color);
+  border-color: var(--accent-primary);
 }
 
 .project-image-container {
   height: 200px;
   width: 100%;
   overflow: hidden;
+  position: relative;
 }
 
 .project-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.05);
 }
 
 .card-content {
@@ -56,16 +64,16 @@
 }
 
 .card-title {
-  font-size: 20px;
-  font-weight: bold;
-  color: #efefef;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-primary);
   margin: 0 0 10px 0;
 }
 
 .card-description {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.6;
-  color: #b0b0b0;
+  color: var(--text-secondary);
   flex-grow: 1;
   margin-bottom: 20px;
 }
@@ -78,19 +86,19 @@
 
 .card-link {
   background-color: transparent;
-  color: #8bff8b;
-  border: 2px solid #8bff8b;
-  padding: 8px 15px;
-  border-radius: 5px;
+  color: var(--accent-primary);
+  border: 2px solid var(--accent-primary);
+  padding: 10px 20px;
+  border-radius: 8px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
   display: flex;
   align-items: center;
   gap: 8px;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: all 0.2s ease;
 }
 
 .card-link:hover {
-  background-color: #8bff8b;
-  color: #121212;
+  background-color: var(--accent-primary);
+  color: #fff;
 }
