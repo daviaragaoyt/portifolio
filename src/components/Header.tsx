@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import ThemeToggle from './ThemeToggle';
-import { FaBars, FaTimes } from 'react-icons/fa';
 import './Header.css';
 
 const navLinks = ['PROJETOS', 'TECNOLOGIAS'];
@@ -57,13 +56,16 @@ const Header: React.FC = () => {
                     </div>
                 </nav>
 
-                {/* Mobile Menu Icon */}
-                <div
-                    className={`menu-icon ${isSidebarOpen ? 'hidden' : ''}`}
+
+                <button
+                    className={`menu-toggle ${isSidebarOpen ? 'active' : ''}`}
+                    aria-label="Abrir menu"
                     onClick={toggleSidebar}
                 >
-                    <FaBars />
-                </div>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
 
             {/* Mobile Sidebar Overlay */}
@@ -74,9 +76,7 @@ const Header: React.FC = () => {
 
             {/* Mobile Sidebar */}
             <aside className={`sidebar ${isSidebarOpen ? 'active' : ''}`}>
-                <div className="close-icon" onClick={closeSidebar}>
-                    <FaTimes />
-                </div>
+                {/* No close icon inside sidebar anymore, the toggle button handles it */}
 
                 <nav className="sidebar-nav">
                     {navLinks.map((link, index) => (
