@@ -60,3 +60,28 @@
   font-size: 14px;
   color: var(--text-secondary);
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .footer {
+    padding: 60px 20px 20px;
+  }
+
+  .footer-heading {
+    font-size: 28px;
+  }
+
+  .footer-text {
+    font-size: 15px;
+    padding: 0 10px;
+  }
+
+  .social-links {
+    gap: 20px;
+  }
+
+  .social-icon {
+    font-size: 30px;
+    padding: 8px;
+  }
+}

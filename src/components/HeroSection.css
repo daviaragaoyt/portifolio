@@ -111,10 +111,14 @@
 }
 
 /* Media Query para telas menores que 768px (celulares) */
+/* Media Query para telas menores que 768px (celulares) */
 @media (max-width: 768px) {
   .hero-section {
     height: auto;
-    padding: 60px 20px;
+    padding: 100px 20px 60px;
+    /* Added top padding to account for fixed header */
+    min-height: 100vh;
+    box-sizing: border-box;
   }
 
   .content-container {
@@ -131,31 +135,60 @@
 
   .text-container {
     padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .profile-title {
-    font-size: 42px;
+    font-size: 36px;
+    /* Adjusted for smaller screens */
+    line-height: 1.2;
   }
 
   .profile-subtitle {
-    font-size: 24px;
-    margin: 5px 0 15px 0;
+    font-size: 20px;
+    margin: 10px 0 20px 0;
   }
 
   .profile-paragraph {
     max-width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
   }
 
   .button-container {
     justify-content: center;
+    width: 100%;
+  }
+
+  .button-link {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .image-container {
     margin-bottom: 20px;
+    width: 100%;
   }
 
   .profile-image {
     width: 250px;
     height: 250px;
+    border-width: 3px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-title {
+    font-size: 32px;
+  }
+
+  .profile-image {
+    width: 200px;
+    height: 200px;
   }
 }

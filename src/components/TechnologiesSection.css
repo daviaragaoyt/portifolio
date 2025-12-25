@@ -51,3 +51,34 @@
   font-weight: 600;
   color: var(--text-primary);
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .technologies-section {
+    padding: 60px 20px;
+  }
+
+  .technologies-heading {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  .technologies-grid {
+    gap: 20px;
+  }
+
+  .tech-item {
+    width: 100px;
+    /* Slightly smaller on mobile to fit more or look balanced */
+    padding: 15px;
+  }
+
+  .tech-icon {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+
+  .tech-name {
+    font-size: 14px;
+  }
+}
