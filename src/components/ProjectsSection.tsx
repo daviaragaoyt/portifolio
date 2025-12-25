@@ -13,7 +13,7 @@ import CyberBorg from '../assets/cyberborg.png'
 import CodePlac from '../assets/codeplac.png';
 import Zaqueu from '../assets/zaqueu.png';
 import IBMG from '../assets/ibmg.png';
-import skyCastImg from '../assets/skycast.png';
+import rosaIA from '../assets/rosaia.png';
 
 interface Project {
     image: string;
@@ -46,11 +46,11 @@ const projectsData: Project[] = [
         codeLink: 'https://github.com/daviaragaoyt/word-hunt-frontend',
     },
     {
-        image: skyCastImg,
-        title: 'SkyCast',
-        description: 'Aplicação de previsão do tempo com geolocalização e mapas interativos.',
-        siteLink: '#',
-        codeLink: '#',
+        image: rosaIA,
+        title: 'Rosa IA',
+        description: 'Apresentamos a Dra. Rosa, sua assistente virtual integrada ao WhatsApp, pronta para oferecer informações confiáveis e suporte sobre o câncer de mama.',
+        siteLink: 'https://rosaia.com.br',
+        codeLink: 'https://github.com/IsabelaA99/rosa-ia',
     },
 
     {
