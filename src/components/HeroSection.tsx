@@ -16,7 +16,7 @@ const HeroSection: React.FC = () => {
                     <h1 className="profile-title">DAVI ARAGÃO:</h1>
                     <h2 className="profile-subtitle">Desenvolvedor FullStack</h2>
                     <p className="profile-paragraph">
-                        Olá! Eu sou Davi Aragão, estudante da UNICEPLAC, graduado em Analise e Desenvolvimento de Sistemas. Sou desenvolvedor e tenho experiência em criar interfaces intuitivas e responsivas usando HTML, CSS e JavaScript e Frame-works como React e React Native. Fique a vontade para dar uma olhada nos meus projetos.
+                        Olá! Sou Davi Aragão, desenvolvedor de software graduado em Análise e Desenvolvimento de Sistemas pela UNICEPLAC. Minha especialidade é criar interfaces intuitivas e responsivas, focando sempre na melhor experiência para o usuário. No meu toolkit principal, utilizo HTML, CSS, JavaScript e frameworks como React e React Native. Convido você a explorar meus projetos abaixo para conhecer mais sobre meu trabalho!
                     </p>
                     <div className="button-container">
                         <a href="#projetos" className="button-link">Conheça meus projetos</a>
