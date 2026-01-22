@@ -34,9 +34,9 @@ const projectsData: Project[] = [
     {
         image: IBMG,
         title: 'Sorteador IBMG',
-        description: 'Site criado para eventos que sorteiam pessoas para participar de premios.',
-        siteLink: 'https://sorteador-ibmg.vercel.app/',
-        codeLink: 'https://github.com/daviaragaoyt/Sorteador-IBMG',
+        description: 'Site criado para a igreja e para participar de eventos/premios.',
+        siteLink: 'https://ibmg-three.vercel.app/',
+        codeLink: 'https://github.com/daviaragaoyt/IBMG',
     },
     {
         image: CodePlac,
